@@ -15,4 +15,7 @@
 - When the image is clicked a second time it should flip back
 
 You are given an `App.js` file, an `objects.js` file which exports the two objects mentioned above, and a `state-basic-assessment-wireframe` file which has your wireframe. Use all the tools you have learned to build this app in the way you feel is best. CSS is not mandatory but should be worked on if you have time remaining
-# react-state-self-assessment
+
+## Food for Thought
+
+- Based on the attached wireframe how many components do you think you'll need?
