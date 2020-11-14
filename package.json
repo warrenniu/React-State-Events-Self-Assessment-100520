@@ -14,7 +14,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lab": "npm test -- --verbose"
+    "lab": "npm test -- --verbose",
+    "submit": "git add . && git commit -m 'done' && git push"
   },
   "eslintConfig": {
     "extends": "react-app"
