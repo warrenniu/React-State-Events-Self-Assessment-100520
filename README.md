@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- Clone this repo, create a new brnach with your name, and complete the deliverables below
+- Clone this repo, create a new branch with your name, and complete the deliverables below
 
 ## Deliverables
 
