@@ -1,26 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { yes, no } from '../objects';
 
-class Drake extends React.Component {
+const Drake = () => {
 
-    state = {
-        clicked: false,
-        yes,
-        no
+    let [clicked, setClicked] = useState(false);
+    let [yesObject] = useState(yes);
+    let [noObject] = useState(no);
+
+    const clickHandler = () => {
+        setClicked(!clicked);
     };
 
-    clickHandler = () => {
-        this.setState((prevState) => ({ clicked: !prevState.clicked }));
-    };
-
-    render() {
-        return (
-            <>
-                <h1>{this.state.clicked ? this.state.yes["yes-statement"] : this.state.no["no-statement"]}</h1>
-                <img alt="Drake" src={this.state.clicked ? this.state.yes["yes-image"] : this.state.no["no-image"]} onClick={this.clickHandler} style={{ width: "40%", height: "40%" }} />
-            </>
-        );
-    };
+    return (
+        <>
+            <h1>{clicked ? yesObject["yes-statement"] : noObject["no-statement"]}</h1>
+            <img alt="Drake" src={clicked ? yesObject["yes-image"] : noObject["no-image"]} onClick={clickHandler} style={{ width: "40%", height: "40%" }} />
+        </>
+    );
 };
 
 export default Drake;
